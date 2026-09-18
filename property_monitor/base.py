@@ -12,7 +12,7 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Iterable
 
-from .models import Property
+from property_monitor.utils.models import Property
 
 
 class PropertySource(ABC):

@@ -2,8 +2,8 @@
 A handful of tests for the two riskiest bits of Phase 1: dedup and
 matching. Run with: pytest property_monitor/test_core.py
 """
-from property_monitor.models import Property, PropertyType, SavedSearch
-from property_monitor.store import ListingStore
+from property_monitor import Property, PropertyType, SavedSearch
+from property_monitor import ListingStore
 
 
 def _prop(**overrides) -> Property:

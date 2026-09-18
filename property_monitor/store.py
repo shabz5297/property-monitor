@@ -8,7 +8,7 @@ later without touching main.py's flow logic.
 """
 from __future__ import annotations
 
-from property_monitor.models import Property
+from property_monitor.utils.models import Property
 
 
 class ListingStore:

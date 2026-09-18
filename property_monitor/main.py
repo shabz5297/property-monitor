@@ -13,10 +13,9 @@ changing.
 """
 from __future__ import annotations
 
-from .models import Property, PropertyType, SavedSearch
-from .sources import MockSource
+from property_monitor.utils.models import Property, PropertyType, SavedSearch
 from property_monitor.store import ListingStore
-
+from mock_source import MockSource
 
 def notify(prop: Property, matched_search: SavedSearch) -> None:
     """Stand-in for Phase 4's email notifications."""
@@ -34,9 +33,9 @@ def run_check(source, store: ListingStore, searches: list[SavedSearch], location
     print(f"[{source.name}] fetched {len(listings)} listings for '{location}'")
 
     for prop in listings:
+
         if store.has_seen(prop):
             continue  # not new -> ignore
-
         store.remember(prop)  # save it
 
         for search in searches:

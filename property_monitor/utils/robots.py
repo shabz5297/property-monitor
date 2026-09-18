@@ -11,7 +11,6 @@ Usage:
     python3 -m property_monitor.utils.robots https://example-agent.co.uk/listings
 """
 from __future__ import annotations
-
 import sys
 import urllib.robotparser
 from urllib.parse import urlparse
