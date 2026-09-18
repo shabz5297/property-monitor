@@ -18,8 +18,8 @@ from __future__ import annotations
 import random
 from typing import Iterable
 
-from property_monitor.models import Property, PropertyType
-from property_monitor.sources.base import PropertySource
+from .models import Property, PropertyType
+from .sources.base import PropertySource
 
 _STREETS = [
     "Sturry Road", "Wincheap", "North Lane", "St Dunstans",

@@ -13,8 +13,8 @@ changing.
 """
 from __future__ import annotations
 
-from property_monitor.models import Property, PropertyType, SavedSearch
-from property_monitor.sources import MockSource
+from .models import Property, PropertyType, SavedSearch
+from .sources import MockSource
 from property_monitor.store import ListingStore
 
 

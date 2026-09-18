@@ -22,9 +22,9 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
-from property_monitor.models import Property, PropertyType
-from property_monitor.sources.base import PropertySource
-from property_monitor.utils.robots import DEFAULT_USER_AGENT, can_fetch
+from .models import Property, PropertyType
+from .sources.base import PropertySource
+from .utils.robots import DEFAULT_USER_AGENT, can_fetch
 
 _PRICE_RE = re.compile(r"[\d,]+")
 _BEDROOM_RE = re.compile(r"(\d+)\s*bed", re.IGNORECASE)
